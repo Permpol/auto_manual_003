@@ -92,7 +92,7 @@ void sendSensor(){
 
 //*****BUTTON AUTO/MANUAL*********
 BLYNK_WRITE(Widget_Btn_00){
-    if(param.asInt() == 1){
+    if(param.asInt() == 2){
         // Blynk.setProperty(LedBlynkAM, "color", "#CCCC00");
         // Blynk.setProperty(LedBlynkAM, "label", "AUTO");
         Serial.print("func(BUTTON): "); Serial.print(btn_auto_manual); Serial.println("auto");
